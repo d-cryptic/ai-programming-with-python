@@ -1,0 +1,79 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key: reverse_great_horned_owl_02.jpg  label:   reverse great horned owl
+ 2 key:        reverse_Boxer_02426.jpg  label:              reverse boxer
+ 3 key: reverse_Golden_retriever_05195.jpg  label:   reverse golden retriever
+ 4 key:              Basenji_00963.jpg  label:                    basenji
+
+     MATCH:
+
+             Basenji_00963.jpg: 
+Real:                    basenji   Classifier:                        basenji
+
+ NOT A MATCH:
+
+reverse_great_horned_owl_02.jpg: 
+Real:   reverse great horned owl   Classifier: ruffed grouse, partridge, bonasa umbellus
+
+       reverse_Boxer_02426.jpg: 
+Real:              reverse boxer   Classifier:                          boxer
+
+reverse_Golden_retriever_05195.jpg: 
+Real:   reverse golden retriever   Classifier:               golden retriever
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+             Basenji_00963.jpg: 
+Real:                    basenji   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+reverse_great_horned_owl_02.jpg: 
+Real:   reverse great horned owl   Classifier: ruffed grouse, partridge, bonasa umbellus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+       reverse_Boxer_02426.jpg: 
+Real:              reverse boxer   Classifier:                          boxer  
+PetLabelDog: 0  ClassLabelDog: 1
+
+reverse_Golden_retriever_05195.jpg: 
+Real:   reverse golden retriever   Classifier:               golden retriever  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  33.3  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  33.3  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+            N Images:   4
+        N Dog Images:   1
+    N Not-Dog Images:   3
+P correct match     : 25.000000
+P correct clasf dogs: 100.000000
+P correct clasf dogs breed: 100.000000
+P correct clasf non dogs: 33.333333
+           pct_match:  25.0
+    pct_correct_dogs: 100.0
+   pct_correct_breed: 100.0
+ pct_correct_notdogs:  33.3
+
+INCORRECT Dog/NOT Dog Assignments:
+Real: reverse boxer                Classifier: boxer                         
+Real: reverse golden retriever     Classifier: golden retriever              
+
+** Total Elapsed Runtime: 0:0:0
